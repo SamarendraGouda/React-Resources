@@ -43,15 +43,21 @@ const Child = ({handleClick}) => {
 ```
 ...
 return(
-  <button onClick = {handleClick} />
+  <button onClick = {handleClick} > Click Here </button>
 )
 ```
 ### Or calling the handleClick function inside another function
 
 ###### Child.js
 ```
+...
 const childFunction = () => {
   handleClick();
 }
+
+return (
+  <button onClick={childFunction}> Click Here </button>
+)
+...
 ```
 
