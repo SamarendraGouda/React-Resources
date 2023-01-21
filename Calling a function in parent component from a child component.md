@@ -2,6 +2,7 @@
 
 ### Creating a function in Parent Component
 
+Parent.js
 ```
 import Child from "./../Components/Child/Child.js"
 
@@ -13,6 +14,7 @@ const Parent = () => {
   }
   ...
 ```
+Parent.js
 ### Rendering the Child Component from parent component
 ``` 
   ...
@@ -26,6 +28,7 @@ const Parent = () => {
 
 ### Add the handleClick property to Child Component
 
+Child.js
 ```
 const Child = ({handleClick}) => {
 ...
@@ -34,6 +37,7 @@ const Child = ({handleClick}) => {
 
 ### Calling the handleClick function from Child component
 
+Child.js
 ```
 ...
 return(
@@ -42,6 +46,7 @@ return(
 ```
 ### Or calling the handleClick function inside another function
 
+Child.js
 ```
 const childFunction = () => {
   handleClick();
