@@ -40,4 +40,11 @@ return(
   <button onClick = {handleClick} />
 )
 ```
+### Or calling the handleClick function inside another function
+
+```
+const childFunction = () => {
+  handleClick();
+}
+```
 
